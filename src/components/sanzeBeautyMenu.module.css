@@ -1,0 +1,847 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "Mermaid Swash Caps.ttf";
+  src: url("../assets/fonts/Mermaid Swash Caps.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.offCanvasMenu {
+  height: auto;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section1OfMenu {
+  height: 100vh;
+  padding-left: 10%;
+  border-right: 0.5px solid rgb(175, 175, 182);
+}
+
+.section2OfMenu {
+  height: 100vh;
+}
+
+.sectionOfContactInfo {
+  height: 100vh;
+  background: linear-gradient(90deg, #304557, #254d70);
+  padding-right: 10%;
+  display: grid;
+  justify-items: end;
+}
+
+.imgContainer {
+  height: 25%;
+  display: flex;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.imgContainer img {
+  height: auto;
+  width: 65%;
+  padding-bottom: 10%;
+}
+
+.Logoutbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #ab2121, #e80000);
+  color: white;
+  padding: 0.5% 1%;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.8em;
+  outline: none;
+  box-shadow: 0 0 0 2px #1a1a1a;
+  transition: background 0.3s, font-size 0.3s, width 0.3s, height 0.3s;
+  width: 8vw;
+  height: 2.5vh;
+}
+
+.Logoutbtn svg {
+  margin-right: 0.3em;
+  width: 0.8em;
+  height: 0.8em;
+}
+
+@media (max-width: 1023px) and (min-width: 769px) {
+  .Logoutbtn {
+    font-size: 0.9em;
+    width: 12vw;
+    height: 3vh;
+  }
+
+  .Logoutbtn svg {
+    width: 1em;
+    height: 1em;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 601px) {
+  .Logoutbtn {
+    font-size: 0.85em;
+    width: 11vw;
+    height: 2.2vh;
+  }
+
+  .Logoutbtn svg {
+    width: 0.9em;
+    height: 0.9em;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 481px) {
+  .Logoutbtn {
+    font-size: 0.8em;
+    width: 12vw;
+    height: 2vh;
+  }
+
+  .Logoutbtn svg {
+    width: 1em;
+    height: 1em;
+  }
+}
+
+.btnContainerTop button {
+  background-color: transparent;
+  border: none;
+}
+
+@media (min-width: 1024px) and (max-width: 2258px) {
+  .Logoutbtn {
+    display: none;
+  }
+
+  .btnContainerTop {
+    display: none;
+  }
+
+  .forTabletSection {
+    display: none;
+  }
+
+  .forTabletprivacyPolicies {
+    display: none;
+  }
+}
+
+.fiftyPercent {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.3vw;
+}
+
+.openingTimes {
+  margin-top: 8.5%;
+  border-top: 0.5px solid rgb(175, 175, 182);
+  padding-top: 15.5%;
+}
+
+.openingTimes > * {
+  line-height: 2.1875em;
+}
+
+.openingTimes h2 {
+  font-family: "Mermaid Swash Caps.ttf";
+  font-weight: 500;
+}
+
+.openingTimes p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  opacity: 0.8;
+}
+
+.privacyPolicies {
+  border-top: 0.5px solid rgb(175, 175, 182);
+  padding-top: 10%;
+  margin-top: 10%;
+}
+
+.privacyPolicies > * {
+  line-height: 2.1875rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  opacity: 0.8;
+}
+
+/*? SECTION 1 OF MENU CSS COMPLEATED HERE  */
+
+/*? SECTION 2 OF MENU CSS STARTS FROM HERE  */
+
+.headingTwo {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  margin-bottom: -7%;
+}
+
+.headingTwo h2 {
+  border-bottom: 0.5px solid rgb(175, 175, 182);
+  font-family: "Mermaid Swash Caps.ttf";
+  font-weight: 700;
+  color: #304557;
+  font-size: 2.8vw;
+  padding-left: 1.1em;
+  margin-top: 3%;
+  padding-bottom: 7.5%;
+}
+
+.section2OfMenuOptions {
+  height: 50%;
+  font-size: 1.1vw;
+}
+
+.section2OfMenuOptions > * {
+  position: relative;
+  overflow: hidden;
+  line-height: 3em;
+  padding-left: 1.5em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  border-bottom: 0.5px solid rgb(175, 175, 182);
+  color: rgb(68, 64, 64);
+  transition: color 0.2s ease;
+}
+
+.section2OfMenuOptions > *::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  right: 0;
+  left: 7.5%;
+  font-weight: 500;
+  bottom: -100%;
+  color: #cc9112;
+  transition: bottom 0.3s ease;
+}
+
+.section2OfMenuOptions > *:hover::after {
+  bottom: 0;
+}
+
+.section2OfMenuOptions > *:hover {
+  color: transparent;
+}
+
+/*? SECTION 2 OF MENU CSS ENDS FROM HERE  */
+
+/*? SECTION OF CONTACT INFO STARTS FROM HERE  */
+
+.btnContainer {
+  height: 100%;
+  width: auto;
+  margin-top: 10%;
+  margin-right: 6%;
+}
+
+.btnContainer button {
+  align-self: center;
+  justify-self: center;
+  background-color: transparent;
+  border: none;
+}
+
+.btnContainer button img {
+  width: 3vw;
+  height: auto;
+  margin-right: 0.5vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.contactInfo h2 {
+  align-self: end;
+  font-family: "Mermaid Swash Caps.ttf";
+  font-weight: 500;
+  color: white;
+  font-size: 2.4vw;
+  opacity: 1;
+}
+
+.contactInfo {
+  height: 16.6vh;
+  padding-bottom: 38%;
+  border-bottom: 1px solid #96a3ad;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactInfo > * {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  opacity: 0.7;
+  font-size: 1em;
+}
+
+.ContactMail {
+  padding-top: 8%;
+}
+
+.Contact {
+  display: flex;
+  padding-left: 30%;
+}
+
+.Contact img {
+  width: 10%;
+  height: auto;
+}
+
+.Mail {
+  display: flex;
+  padding-left: 1%;
+  padding-top: 5%;
+}
+
+.Mail img {
+  width: 10%;
+  height: auto;
+}
+
+.forPadding {
+  border-bottom: 1px solid #96a3ad;
+  padding-bottom: 25%;
+}
+
+@media (min-width: 1450px) and (max-width: 1860px) {
+  .Mail img {
+    width: 2vw;
+    height: 3vh;
+  }
+}
+
+.Contact img {
+  width: 12%;
+  height: auto;
+}
+
+.Address {
+  height: 16.6vh;
+}
+
+.Address h2 {
+  font-family: "Mermaid Swash Caps.ttf";
+  font-weight: 300;
+  color: white;
+  margin-left: 25%;
+  font-size: 1.8em;
+  width: 100%;
+}
+
+.Address1 {
+  margin-top: 0.6rem;
+}
+
+.Address p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  color: white;
+  line-height: 1.5rem;
+  opacity: 0.7;
+}
+
+.socialMediaLinks {
+  width: 100%;
+  margin-top: 20%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 16.6vh;
+}
+
+.socialMediaLinks h2 {
+  font-family: "Mermaid Swash Caps.ttf";
+  font-weight: 300;
+  color: white;
+  font-size: 1.8rem;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding-right: 0.5rem;
+}
+
+.socialMediaIcons {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  padding-right: 0.5rem;
+}
+
+.socialMediaIcons img {
+  width: 4vw;
+  height: auto;
+}
+
+@media (min-width: 1320px) and (max-width: 1860px) {
+  html,
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .btnContainer button {
+    height: auto;
+    width: auto;
+    padding-left: 70%;
+  }
+
+  .contactInfo h2 {
+    font-size: 2rem;
+  }
+
+  .contactInfo > * {
+    font-size: 1.1em;
+  }
+
+  .Address h2 {
+    font-size: 2em;
+  }
+
+  .Address > * {
+    font-size: 1.1em;
+  }
+
+  .socialMediaLinks h2 {
+    font-size: 2.2em;
+  }
+}
+
+@media (min-width: 1861px) and (max-width: 2258px) {
+  html,
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .btnContainer button {
+    padding-left: 60%;
+  }
+
+  .btnContainer h2 {
+    font-size: 2.4rem;
+  }
+
+  .contactInfo {
+    padding-bottom: 38%;
+  }
+
+  .contactInfo > * {
+    font-size: 1.5rem;
+  }
+
+  .phoneIcon {
+    width: 16%;
+    height: auto;
+  }
+
+  .Mail .mailIcon {
+    padding-top: 2%;
+    width: 30%;
+    height: 65%;
+  }
+
+  .Address h2 {
+    margin-left: 0%;
+    font-size: 2.4rem;
+  }
+
+  .Address > * {
+    font-size: 1.5rem;
+  }
+
+  .socialMediaLinks h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/*! RESPONSIVE FOR TABLETS 481PX TO 1023PX .....  */
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  html,
+  body {
+    width: 100vw;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: auto;
+    flex-grow: 1;
+  }
+
+  .offCanvasMenu {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .section1OfMenu {
+    padding-left: 3%;
+    height: fit-content;
+  }
+
+  .imgContainer {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 0.5px solid rgb(175, 175, 182);
+    margin-top: 8%;
+    width: 93vw;
+  }
+
+  .imgContainer img {
+    height: auto;
+    width: 30%;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    position: relative;
+    bottom: 63%;
+    left: 45%;
+  }
+
+  @media (min-width: 830px) and (max-width: 910px) {
+    .buttons {
+      bottom: 55%;
+    }
+  }
+  @media (min-width: 770px) and (max-width: 829px) {
+    .buttons {
+      bottom: 50%;
+    }
+  }
+
+  @media (min-width: 690px) and (max-width: 769px) {
+    .buttons {
+      bottom: 45%;
+    }
+  }
+  @media (min-width: 605px) and (max-width: 689px) {
+    .buttons {
+      bottom: 40%;
+    }
+  }
+
+  @media (min-width: 505px) and (max-width: 605px) {
+    .buttons {
+      bottom: 35%;
+    }
+  }
+  @media (min-width: 481px) and (max-width: 505px) {
+    .buttons {
+      bottom: 30%;
+    }
+  }
+
+  .fiftyPercent {
+    display: none;
+  }
+
+  .section2OfMenu {
+    margin-top: 2%;
+    position: relative;
+    bottom: 1vh;
+    height: fit-content;
+  }
+
+  .headingTwo {
+    display: block;
+    height: 10vh;
+    padding-left: 1%;
+  }
+
+  @media (min-width: 785px) and (max-width: 865px) {
+    .headingTwo {
+      margin-top: 3%;
+      height: 9vh;
+    }
+  }
+
+  @media (min-width: 665px) and (max-width: 785px) {
+    .headingTwo {
+      margin-top: 3%;
+      height: 8vh;
+    }
+  }
+
+  @media (min-width: 525px) and (max-width: 664px) {
+    .headingTwo {
+      margin-top: 1%;
+      height: 7vh;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 525px) {
+    .headingTwo {
+      margin-top: 0%;
+      position: relative;
+      bottom: 1%;
+      height: 5vh;
+    }
+  }
+
+  .headingTwo h2 {
+    padding-left: 6%;
+    font-size: 3.5vw;
+    border: none;
+  }
+
+  .section2OfMenuOptions {
+    height: 20%;
+  }
+
+  .section2OfMenuOptions > * {
+    padding-left: 5%;
+    margin-left: 3%;
+    font-weight: 500;
+    border-left: 0.5px solid rgb(175, 175, 182);
+    border-right: 0.5px solid rgb(175, 175, 182);
+    width: 93vw;
+  }
+
+  .Home {
+    border-top: 0.5px solid rgb(175, 175, 182);
+  }
+
+  .sectionOfContactInfo {
+    display: none;
+  }
+
+  .btnContainerTop button img {
+    width: 4.5vw;
+    height: auto;
+    margin-left: 90%;
+  }
+
+  .forTabletSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #254d70;
+    height: auto;
+    margin-top: 4%;
+    width: 100vw;
+    height: auto;
+  }
+
+  .forTabletOpeningTimes {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    margin-top: 8%;
+    margin-left: 8%;
+    line-height: 2.1875em;
+    width: 50vw;
+    padding-bottom: 10%;
+  }
+
+  .forTabletOpeningTimes h2 {
+    font-family: "Mermaid Swash Caps.ttf";
+    font-size: 3vw;
+    font-weight: 400;
+    color: white;
+  }
+
+  .forTabletOpeningTimes p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 200;
+    opacity: 0.8;
+  }
+
+  .forTabletcontactInfo {
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    margin-top: 8%;
+    padding-left: 10%;
+    line-height: 2.1875em;
+    width: 50vw;
+    padding-bottom: 10%;
+  }
+
+  .forTabletcontactInfo h2 {
+    font-family: "Mermaid Swash Caps.ttf";
+    font-size: 3vw;
+    font-weight: 400;
+    color: white;
+  }
+
+  .forTabletcontactInfoContactMail {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 200;
+    opacity: 0.8;
+  }
+
+  .forTabletContact {
+    display: flex;
+  }
+
+  .forTabletphoneIcon {
+    width: 16px;
+    height: 20px;
+    margin-top: 1.4%;
+  }
+
+  .forTabletMail {
+    display: flex;
+  }
+
+  .forTabletmailIcon {
+    width: 16px;
+    height: 20px;
+    margin-top: 1.4%;
+  }
+
+  @media (min-width: 700px) and (max-width: 825px) {
+    .forTabletphoneIcon {
+      width: 1.5vw;
+      height: 1.2vh;
+      margin-top: 2.5%;
+    }
+
+    .forTabletmailIcon {
+      width: 2.3vw;
+      height: 1.2vh;
+      margin-top: 2.5%;
+    }
+  }
+  @media (min-width: 645px) and (max-width: 699px) {
+    .forTabletphoneIcon {
+      width: 2vw;
+      height: 1.2vh;
+      margin-top: 2.5%;
+    }
+
+    .forTabletmailIcon {
+      width: 3vw;
+      height: 1.2vh;
+      margin-top: 2.5%;
+    }
+  }
+  @media (min-width: 530px) and (max-width: 644px) {
+    .forTabletphoneIcon {
+      width: 2.5vw;
+      height: 1.2vh;
+      margin-top: 3%;
+    }
+
+    .forTabletmailIcon {
+      width: 3vw;
+      height: 1.2vh;
+      margin-top: 3%;
+    }
+  }
+  @media (min-width: 481px) and (max-width: 529px) {
+    .forTabletphoneIcon {
+      width: 2vw;
+      height: 1vh;
+      margin-top: 4.5%;
+    }
+
+    .forTabletmailIcon {
+      width: 2.5vw;
+      height: 1vh;
+      margin-top: 4.5%;
+    }
+  }
+
+  .forTabletAddress {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-top: 8%;
+    margin-left: 8%;
+    width: 50vw;
+    padding-bottom: 10%;
+  }
+
+  .forTabletAddress h2 {
+    font-family: "Mermaid Swash Caps.ttf";
+    font-size: 3vw;
+    font-weight: 400;
+    color: white;
+  }
+
+  .inlineParagraph {
+    display: flex;
+    margin-top: 2%;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 200;
+    opacity: 0.8;
+  }
+
+  .forTabletforPadding {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 200;
+    opacity: 0.8;
+  }
+
+  .forTabletsocialMediaLinks {
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-top: 8%;
+    padding-left: 10%;
+    line-height: 3em;
+    width: 50vw;
+    padding-bottom: 10%;
+  }
+
+  .forTabletsocialMediaLinks h2 {
+    font-family: "Mermaid Swash Caps.ttf";
+    font-size: 3vw;
+    font-weight: 400;
+    color: white;
+  }
+
+  .forTabletsocialMediaLinks img:nth-last-child(-n + 2) {
+    margin-left: 5%;
+  }
+
+  .forTabletprivacyPolicies {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    background-color: #254d70;
+    padding: 3% 0 3% 0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 200;
+    opacity: 1;
+  }
+}
